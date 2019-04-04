@@ -1,0 +1,18 @@
+#ifndef THREEDICEPOKER_H
+#define THREEDICEPOKER_H
+#include "Die.h"
+
+class ThreeDicePoker{
+private:
+    Die dice[3];
+public:
+    ThreeDicePoker();
+    int getDieValue(int dieNumber);
+    void rollDie(int number);
+    void rollAll();
+    void sortList();
+    int getScore();
+    void setDie(int dieNumber, int value);
+};
+
+#endif // THREEDICEPOKER_H
